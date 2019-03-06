@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "start:nodemon": "nodemon src/server.js",
-    "test": "npx babel-node --presets=@babel/preset-env node_modules/cucumber/bin/cucumber-js test/features"
+    "test": "babel-node node_modules/cucumber/bin/cucumber-js test/features",
+    "test:watch": "babel-watch --watch src --watch test node_modules/cucumber/bin/cucumber-js test/features"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,9 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.2.3",
+    "babel-watch": "^7.0.0",
     "cucumber": "^5.1.0",
     "nodemon": "^1.18.9",
     "supertest": "^3.4.1"
