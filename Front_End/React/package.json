@@ -12,7 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npx babel-node --presets=@babel/react,@babel/preset-env node_modules/cucumber/bin/cucumber-js test/features",
+    "test": "babel-node node_modules/cucumber/bin/cucumber-js test/features",
+    "test:watch": "babel-watch --watch src --watch test node_modules/cucumber/bin/cucumber-js test/features",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +31,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-watch": "^7.0.0",
     "cucumber": "^5.1.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
