@@ -5,7 +5,8 @@
   "scripts": {
     "install:all": "npm install && concurrently \"cd ../Back_End/Node/ && npm install\" \"cd ../Front_End/React && npm install\"",
     "dev:all": "concurrently \"cd ../Back_End/Node/ && npm run start:nodemon\" \"cd ../Front_End/React && npm run start\"",
-    "test:all": "concurrently \"cd ../Back_End/Node/ && npm test \" \"cd ../Front_End/React && npm test\""
+    "test:all": "concurrently \"cd ../Back_End/Node/ && npm test \" \"cd ../Front_End/React && npm test\"",
+    "test:watch:all": "concurrently \"cd ../Back_End/Node/ && npm run test:watch\" \"cd ../Front_End/React && npm run test:watch\""
   },
   "keywords": [],
   "author": "",
