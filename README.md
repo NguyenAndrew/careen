@@ -24,6 +24,13 @@ Q: What technologies are used on the front end?
 A: The entire Careen.js stack is used on the front end. Node + Enzyme + Express + Cucumber is used for testing. The application uses React (Made with [Create React App](https://facebook.github.io/create-react-app/)) and Axios.
 
 ---
+
 Q: Can I see my changes live while developing? 
 
-A: Yes! ```npm run dev:all``` uses Create React App to watch changes on the React application and Nodemon to watch changes on the back end server.  
+A: Yes! ```npm run dev:all``` uses Create React App to watch changes on the React application and Nodemon to watch changes on the back end server.
+
+---
+
+Q: What does ```npm run test:watch:all``` do in the Full_Stack directory?
+
+A: This command allows for quick continuous BDD/TDD. To use, open up a second terminal/shell/command prompt, and execute this command there. When changes on src or test are made and saved, the tests will automatically re-run without having to reload the transpiler (Babel). This feature is achieved through babel-watch. Refer to https://github.com/kmagiera/babel-watch for more details.
