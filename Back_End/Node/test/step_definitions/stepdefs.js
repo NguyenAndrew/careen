@@ -3,7 +3,7 @@ const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 
 Given('an Express application called app', function () {
-    this.app = require('../../../src/app');
+    this.app = require('../../src/app');
 });
 
 When('I call the health route on app', function () {

@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "start:nodemon": "nodemon src/server.js",
-    "test": "babel-node node_modules/cucumber/bin/cucumber-js test/features",
-    "test:watch": "babel-watch --watch src --watch test node_modules/cucumber/bin/cucumber-js test/features"
+    "test": "babel-node -- node_modules/cucumber/bin/cucumber-js test/features --require test/step_definitions",
+    "test:watch": "babel-watch --watch src --watch test -- node_modules/cucumber/bin/cucumber-js test/features --require test/step_definitions"
   },
   "keywords": [],
   "author": "",
